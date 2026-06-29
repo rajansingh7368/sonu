@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:100vh;
+            background:#f0f0f0;
+        }
+        .mic{
+            position: relative;
+            height:40px;
+            width: 80px;
+            background: black;
+            border-radius: 20px;
+
+        }
+        .mic::after{
+            content: '';
+            position:absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 20px;
+            background: black;
+            border-radius: 3px;
+
+        }
+        .mic-shadow{
+            position: absolute;
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 10px;background: #090576;
+            border-radius: 50%;
+            filter:blur(2px);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="mic">
+        <i class="mic-icon"></i>
+        <div class="mic-shadow"></div>
+    </div>
+    
+</body>
+</html>
